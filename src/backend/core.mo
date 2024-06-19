@@ -9,6 +9,7 @@ import Bool "mo:base/Bool";
 import Debug "mo:base/Debug";
 import Time "mo:base/Time";
 import Nat "mo:base/Nat";
+import Text "mo:base/Text";
 
 actor Core {
   stable var usersRepository : [(Principal, Types.User)] = [];

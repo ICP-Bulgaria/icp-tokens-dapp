@@ -42,11 +42,11 @@ module {
 
     // Comments
     public type Comment = {
-        canister_id: Text;
+        id: Nat;
         text: Text;
         timestamp: Int;
         user_principal: Principal;
     };
 
-    public type CommentList = HashMap<Int, Comment>;
+    public type CommentList = HashMap<Principal, [Comment]>;
 }

@@ -8,7 +8,8 @@
       "type": "assets",
       "dependencies": [
         "backend_core",
-        "internet-identity"
+        "internet-identity",
+        "comments"
       ]
     },
     "internet-identity": {
@@ -17,6 +18,11 @@
     },
     "backend_core": {
       "main": "src/backend/core.mo",
+      "type": "motoko",
+      "dependencies": []
+    },
+    "comments": {
+      "main": "src/backend/comments/comment.mo",
       "type": "motoko",
       "dependencies": []
     }
